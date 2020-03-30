@@ -3,8 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Server Calculator</title>
+    <script src="vendors/jquery.min.js"></script>
+    <script src="client.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <h1>Calculator</h1>
-  <body></body>
+  <body>
+    <div>
+      <label for="js-num1Input">Enter Number</label>
+      <input name="js-num1Input" type="number" id="num1" />
+      <button class="js-plus-btn">+</button>
+      <button class="js-minus-btn">-</button>
+      <button class="js-multi-btn">*</button>
+      <button class="js-divide-btn">/</button>
+      <label for="js-num2Input">Enter Number</label>
+      <input name="js-num2Input" type="number" id="num2" />
+      <button class="js-total-btn">=</button>
+      <button class="js-clear-btn">C</button>
+    </div>
+    <div>TOTAL</div>
+    <p class="js-total"></p>
+    <div class="js-container">
+      <p>Equation Statements
+        <ul>
+          <li class="js-calcHistory-list"></li>
+        </ul>
+      </p>
+    </div>
+    <div class="js-history"></div>
+  </body>
 </html>
